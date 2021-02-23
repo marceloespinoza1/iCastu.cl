@@ -1,0 +1,29 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+.careerfy-banner-eleven-tabs {
+  width: 65%;
+   background: rgba(0,0,0,.5);
+  border-radius: .25rem!important;
+  padding: 30px;
+}
+
+.careerfy-fancy-title p {
+  margin-top: 30px;
+}
+
+.careerfy-fancy-title h2 {
+  line-height: 42px !important;
+}
+
+.creativas-list .careerfy-candidates-style11-inner {
+  background: white;
+}
+
+.creativas-list .careerfy-fancy-title p {
+  color: white !Important;
+}
+
+.creativas-list .careerfy-fancy-title h2 {
+  color: white !important;
+}</style>
+<!-- end Simple Custom CSS and JS -->

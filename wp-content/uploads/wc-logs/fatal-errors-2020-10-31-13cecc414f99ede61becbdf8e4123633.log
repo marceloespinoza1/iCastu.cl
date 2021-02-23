@@ -1,0 +1,18 @@
+2020-10-31T17:18:18+00:00 CRITICAL Uncaught Error: Class 'DOMDocument' not found in /var/www/html/wp-content/plugins/careerfy-framework/includes/common-functions.php:46
+Stack trace:
+#0 /var/www/html/wp-content/themes/careerfy/archive.php(62): careerfy_pagination()
+#1 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#2 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#3 /var/www/html/index.php(17): require('/var/www/html/w...')
+#4 {main}
+  thrown en /var/www/html/wp-content/plugins/careerfy-framework/includes/common-functions.php en la línea 46
+
+2020-10-31T18:59:01+00:00 CRITICAL Uncaught Error: Class 'DOMDocument' not found in /var/www/html/wp-content/plugins/careerfy-framework/includes/common-functions.php:46
+Stack trace:
+#0 /var/www/html/wp-content/themes/careerfy/archive.php(62): careerfy_pagination()
+#1 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#2 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#3 /var/www/html/index.php(17): require('/var/www/html/w...')
+#4 {main}
+  thrown en /var/www/html/wp-content/plugins/careerfy-framework/includes/common-functions.php en la línea 46
+

@@ -1,0 +1,315 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+.container-wrapper, .jobsearch_candidate_info, .jobsearch_box_contact_form, .jobsearch-search-filter-wrap, .jobsearch-candidate-default-wrap, .jobsearch-employer-dashboard-nav, #jobsearch-notification-section, .jobsearch-employer-box-section, .jobsearch_box_jobdetail_three_apply_wrap, .careerfy-jobdetail-content, .careerfy-joblisting-classic-wrap, .jobsearch-jobdetail-list, .jobsearch-jobdetail-content, .jobsearch_apply_job_wrap, .jobsearch-employer-list .jobsearch-table-layer, .careerfy-modren-services-wrap, .careerfy-news-grid-wrap, .careerfy-candidates-style11-inner, .careerfy-jobdetail-content-list, .jobsearch_box_application_apply, .careerfy-joblisting-wrap, .widget_your_info_wrap, .jobsearch-login-box, .jobsearch-login-box, .jobsearch-modal .modal-box-area, .jobsearch-joblisting-classic-wrap {
+    border-radius: 2px !important;
+    border: none !important;
+    background-color: #1E1E1E !important;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.careerfy-breadcrumb, .jobsearch-employer-wrap-section, .jobsearch_box_contact_form form {
+    background-color: #1F1F1F;
+}
+
+.jobsearch-employer-wrap-section, .jobsearch_box_contact_form form {
+	border: none;
+}
+
+.jobsearch-main-section, .jobsearch-main-content, .jobsearch-plugin-default-container, .careerfy-wrapper, html {
+  background-color: #121212;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .review-stars-sec label, .rating-text, .jobsearch-applicants-stats ul li, .jobsearch-applicants-stats-wrap span  {
+    color: #979797;
+}
+
+.jobsearch-jobdetail-listthumb, .jobsearch-typo-wrap .review-overall-stars-sec {
+    border: none;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.jobsearch-typo-wrap .review-stars-sec, .jobsearch-stats-list-wrap, .jobsearch-radio-checkbox label {
+    border: none;
+}
+
+.jobsearch-location-box input[type="text"], .jobsearch-checkbox input[type="number"], .jobsearch-checkbox input[type="text"] {
+    border: none;
+    background-color: transparent;
+}
+
+.jobsearch-typo-wrap h1, .jobsearch-typo-wrap h2, .jobsearch-typo-wrap h3, .jobsearch-typo-wrap h4 .jobsearch-typo-wrap h5, .jobsearch-typo-wrap h6 {
+    color: #E5E5E5;
+}
+
+.jobsearch-jobdetail-list a {
+  color: white !important;
+}
+
+.jobsearch-checkbox input[type="checkbox"] + label span, .jobsearch-checkbox input[type="radio"] + label span, .jobsearch_box_contact_form input, .jobsearch_box_contact_form textarea, #jobsearch-review-form textarea, .jobsearch-mdep-drpdwn, .form-control, .jobsearch-login-box form ul li input[type="text"], .jobsearch-login-box form ul li input[type="password"], .jobsearch-login-box form ul li input[type="email"], .jobsearch-login-box form ul li input[type="tel"], .jobsearch-login-box form ul li input[type="number"], .jobsearch-user-form textarea {
+    background-color: #1E1E1E !important;
+    border: 1px solid #545454 !important;
+}
+
+.jobsearch-user-form textarea {
+  color: white;
+}
+.jobsearch-joblisting-classic figure {
+	border: none;  
+}
+
+.jobsearch-typo-wrap .ui-state-default, .jobsearch-typo-wrap .ui-widget-content .ui-state-default {
+    border-radius: 50%;
+}
+
+.jobsearch-add-job-to-favourite.jobsearch-job-like {
+  background: #393d41 !important;
+}
+
+.selectize-control.single .selectize-input, .phon-num-fieldcon input.required, .phon-num-fieldcon input[type="tel"], .selectize-dropdown, .selectize-input, .jobsearch-profile-select select, .jobsearch-profile-select .selectize-select.multi .selectize-input, .phonefild-wout-valid input, .jobsearch-employer-profile-form li input[type="text"], .jobsearch-employer-profile-form li input[type="password"], .jobsearch-employer-profile-form li textarea, .jobsearch-employer-profile-form li input[type="email"], .jobsearch-employer-profile-form li input[type="number"], .phon-num-fieldcon input.required, .phon-num-fieldcon input[type="tel"], .jobsearch-user-form input[type="text"], .jobsearch-user-form input[type="password"], .jobsearch-user-form input[type="email"], .jobsearch-user-form input[type="number"], .jobsearch-user-form input[type="tel"] {
+  background-color: #1e1e1e !important;
+  color: #8f908f;
+  border: 1px solid #545454;
+}
+
+.selectize-dropdown, .selectize-input, .jobsearch-profile-select select {
+    color: white;
+	background: #22272c;
+}
+
+.range-field-container {
+  border: none;
+}
+
+.jobsearch-employer-profile-form li input[type="text"], .jobsearch-employer-profile-form li input[type="password"], .jobsearch-employer-profile-form li textarea, .jobsearch-employer-profile-form li input[type="email"], .jobsearch-employer-profile-form li input[type="number"], .phon-num-fieldcon input.required, .phon-num-fieldcon input[type="tel"], .jobsearch-user-form input[type="text"], .jobsearch-user-form input[type="password"], .jobsearch-user-form input[type="email"], .jobsearch-user-form input[type="number"], .jobsearch-user-form input[type="tel"] {
+    color: white;
+    background-color: #22272c;
+  }
+
+/* MCE Editor */
+
+.wp-editor-container {
+    border: none !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.mce-container, .mce-container *, .mce-widget, .mce-widget *, .mce-reset {
+  background: transparent !important;
+
+}
+
+.mce-btn i:before {
+  color: white !Important;
+}
+
+.wp-editor-container {
+  margin: 20px 0 0;
+	border: none;
+}
+
+
+.terms-priv-chek-con p a {
+    color: white;
+}
+
+
+.careerfy-main-content {
+	background: #121212;
+}
+
+/* perfil start*/
+
+
+element.style {
+}
+.jobsearch-employer-profile-form li input[type="text"], .jobsearch-employer-profile-form li input[type="password"], .jobsearch-employer-profile-form li textarea, .jobsearch-employer-profile-form li input[type="email"], .jobsearch-employer-profile-form li input[type="number"], .phon-num-fieldcon input.required, .phon-num-fieldcon input[type="tel"], .jobsearch-user-form input[type="text"], .jobsearch-user-form input[type="password"], .jobsearch-user-form input[type="email"], .jobsearch-user-form input[type="number"], .jobsearch-user-form input[type="tel"] {
+    color: white;
+    background-color: #22272c;
+}
+.jobsearch-employer-profile-form li input[type="text"], .jobsearch-employer-profile-form li input[type="password"], .jobsearch-employer-profile-form li textarea, .jobsearch-employer-profile-form li input[type="email"], .jobsearch-employer-profile-form li input[type="number"] {
+    float: left;
+    width: 100%;
+    height: 41px;
+    border: 1px solid #eceeef;
+    border-radius: 2px;
+    background-color: #ffffff;
+    color: #979797;
+}
+
+/* perfil end start*/
+
+.jobsearch-employer-profile-form li input[type="text"], .jobsearch-employer-profile-form li input[type="password"], .jobsearch-employer-profile-form li textarea, .jobsearch-employer-profile-form li input[type="email"], .jobsearch-employer-profile-form li input[type="number"], .phon-num-fieldcon input.required, .phon-num-fieldcon input[type="tel"], .jobsearch-user-form input[type="text"], .jobsearch-user-form input[type="password"], .jobsearch-user-form input[type="email"], .jobsearch-user-form input[type="number"], .jobsearch-user-form input[type="tel"] {
+    color: #8f908f;
+    background-color: #1e1e1e !important;
+}
+
+.jobsearch-employer-profile-form li input[type="text"], .jobsearch-employer-profile-form li input[type="password"], .jobsearch-employer-profile-form li textarea, .jobsearch-employer-profile-form li input[type="email"], .jobsearch-employer-profile-form li input[type="number"] {
+    border: 1px solid #545454;
+}
+
+.jobsearch-employer-profile-form label {
+    color: #818181;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+}
+
+.jobsearch-userprofile-url strong {
+  color: white;
+  font-weight: 400;
+}
+
+.jobsearch-userprofile-url .updte-profile-slugbtn, .lost-password {
+  color: #3089dc !important;
+}
+
+.skills-perc {
+    color: #797a79;
+}
+
+}
+.jobsearch-employer-dashboard-nav ul li a {
+    color: #f2f2f2 !important;
+    border: none !Important;
+ }
+
+.jobsearch-employer-dashboard-nav ul li {
+    border-top: 1px solid #535353;
+}
+
+.jobsearch-employer-dashboard-nav ul li:hover a, .jobsearch-employer-dashboard-nav ul li.active a {
+    background-color: rgb(0 218 197 / 0.1);
+}
+
+.jobsearch-employer-dashboard-nav ul li a {
+  border: none !important;
+  color: #fff;
+}
+
+.jobsearch-typo-wrap .jobsearch-employer-profile-submit, .other-lang-translate-post {
+    color: #121212;
+}
+
+.careerfy-simple-gallery ul li a {
+    border: none;
+}
+
+.careerfy-jobdetail-services .careerfy-services-text {
+    color: #8f908f;
+}
+
+.careerfy-services-text small {
+    font-weight: 400;
+    color: #f2f2f2;
+}
+
+.jobsearch-checkbox li .filter-post-count {
+    background-color: transparent;
+}
+
+.jobsearch-login-box form input[type="submit"], .jobsearch-login-box form .jobsearch-login-submit-btn, .jobsearch-login-box form .jobsearch-reset-password-submit-btn, .jobsearch-login-box form .jobsearch-register-submit-btn {
+    color: white;
+    font-weight: 400;
+}
+
+.jobsearch-login-box {
+  margin-top: 40px;
+}
+
+.jobsearch-box-title span:before, .jobsearch-box-title span:after, .jobsearch-box-title:before, .jobsearch-box-title:after {
+    background-color: #545454;
+}
+
+
+.login-reg-errors .alert-danger, .registration-errors .alert-danger, .reset-password-errors .alert-danger, .employer-access-msg, .jobsearch_candidate_info .employer-access-msg {
+    background-color: #e15440;
+  	border: none !Important;
+}
+
+.alert alert-danger p {
+  color: white;
+}
+
+.jobsearch-applicants-stats {
+    border: none;
+}
+
+.jobsearch-applicants-stats-wrap {
+    border: none;
+    background: transparent;
+}
+
+.profile-improve-con ul li {
+    background-color: transparent;
+    color: #979797;
+}
+
+.profile-improve-con ul li small {
+    color: #000;
+}
+
+.profile-completion-con {
+    border-bottom: 1px solid #545454;
+    border-top: 1px solid #545454;
+}
+
+.minimum-percent span, .minimum-percent small, .improve-title h5 {
+    color: #979797;
+}
+
+/* perfil resumen */
+
+.jobsearch-candidate-resume-wrap .jobsearch-candidate-title:before, .jobsearch-candidate-resume-wrap .jobsearch-candidate-title:after {
+    background-color: #545454;
+}
+
+.jobsearch-candidate-title i {
+    background-color: black;
+    border: none;
+    box-shadow: none;
+}
+
+.jobsearch-mortarboard:before, .jobsearch-social-media:before, .jobsearch-briefcase:before, .jobsearch-social-media:before {
+    color: white;
+}
+
+}
+a.jobsearch-resume-addbtn, .jobsearch-resume-addbtn span {
+    color: #000;
+}
+
+.careerfy-footer-five .careerfy-footer-widget {
+    padding: 0px;
+}
+
+.careerfy-candidate-title i {
+    background-color: black;
+    border: 1px solid;
+    box-shadow: none;
+}
+
+.jobsearch-login-box form ul li input[type="text"], .jobsearch-login-box form ul li input[type="password"], .jobsearch-login-box form ul li input[type="email"], .jobsearch-login-box form ul li input[type="tel"], .jobsearch-login-box form ul li input[type="number"] {
+  color: white;
+}
+
+.form-control:focus {
+  box-shadow: none;
+
+}
+
+careerfy-mobilehder-strip {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+.careerfy-mobilehder-strip {
+    display: none !important;
+}
+  .inicio h1 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+  .inicio h2 {
+     font-size: 20px;
+    line-height: 1.25;
+  }}</style>
+<!-- end Simple Custom CSS and JS -->

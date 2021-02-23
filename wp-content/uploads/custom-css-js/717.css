@@ -1,0 +1,39 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('/wp-content/fonts/ProximaNova-Regular.eot');
+    src: url('/wp-content/fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/fonts/ProximaNova-Regular.woff2') format('woff2'),
+         url('/wp-content/fonts/ProximaNova-Regular.woff') format('woff'),
+         url('/wp-content/fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+ 
+}
+
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('/wp-content/fonts/ProximaNova-Bold.eot');
+    src: url('/wp-content/fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/fonts/ProximaNova-Bold.woff2') format('woff2'),
+         url('/wp-content/fonts/ProximaNova-Bold.woff') format('woff'),
+         url('/wp-content/fonts/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+ 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "ProximaNova-Bold", "Varela Round", Arial;
+}
+
+.inicio h1, inicio h2 {
+  font-family: "Lato", "ProximaNova-Bold", "Varela Round", Arial;
+}
+
+p, li, a {
+  font-family: "ProximaNova-Regular", "Varela Round", Arial !Important;
+}
+</style>
+<!-- end Simple Custom CSS and JS -->

@@ -1,0 +1,295 @@
+/*
+Theme Name: Careerfy Child
+Theme URI: http://demo.eyecix.com/careerfy/
+Template: careerfy
+Author: Eyecix
+Author URI: http://eyecix.com/
+Description: Careerfy brings you the most simple solution to display jobs on any type of websites. You may already know, some really big Job Portals provides the option to use their database and extend your website with job offers. This Theme can make everything automatically, some job providers also pay commission when any of your visitors click on the job links.
+Tags: two-columns,left-sidebar,custom-background,custom-colors,custom-header,custom-menu,editor-style,featured-images,microformats,post-formats,rtl-language-support,sticky-post,threaded-comments,translation-ready
+Version: 1.1.1.2
+Updated: 2018-05-02 14:27:32
+
+*/
+
+/* general styling + homepage */
+
+body {
+    background-color: #171c20;
+}
+.careerfy-joblisting-plain-wrap {
+    border-radius: 2px;
+    padding: 15px;
+    border: 1px solid #393d41;
+    background-color: #22272b;
+}
+
+.careerfy-joblisting-plain-wrap figure, .review-stars-sec, .review-overall-stars-sec, .jobsearch-stats-list-wrap, .careerfy-joblisting-classic figure, .jobsearch_box_jobdetail_three_apply img, .jobsearch-jobdetail-listthumb, .jobsearch_box_application_apply img, .careerfy-joblisting-view4 figure a, .jobsearch-social-icons {
+    border: none !important;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .jobsearch-content-title h2, .jobsearch-candidate-title h2, .careerfy-content-title h2, .careerfy-candidate-title h2, h2.jobsearch-fltcount-title {
+    color: #bfbfbf;
+}
+
+.careerfy-joblisting-plain-wrap a, .jobsearch-employer-dashboard-nav ul li a {
+    color: #999;
+}
+
+/* end general styling + homepage */
+
+/* Perfil */
+
+.jobsearch-main-content {
+    background-color: #171c20;
+}
+
+.container-wrapper, .jobsearch_candidate_info, .jobsearch_box_contact_form, .jobsearch-search-filter-wrap, .jobsearch-candidate-default-wrap, .jobsearch-employer-dashboard-nav, #jobsearch-notification-section, .jobsearch-employer-box-section, .jobsearch_box_jobdetail_three_apply_wrap, .careerfy-jobdetail-content, .careerfy-joblisting-classic-wrap, .jobsearch-jobdetail-list, .jobsearch-jobdetail-content, .jobsearch_apply_job_wrap, .jobsearch-employer-list .jobsearch-table-layer, .careerfy-modren-services-wrap, .careerfy-news-grid-wrap, .careerfy-candidates-style11-inner, .careerfy-jobdetail-content-list, .jobsearch_box_application_apply, .careerfy-joblisting-wrap, .widget_your_info_wrap, .jobsearch-login-box, .jobsearch-login-box, .jobsearch-modal .modal-box-area  {
+    border-radius: 2px !important;
+    border: 1px solid #393d41 !important;
+    background-color: #22272b !important;
+}
+
+.jobsearch-services-text, .jobsearch-employer-profile-form label {
+    color: #a6a6a6 !important;
+}
+
+.jobsearch-services-text small, .careerfy-services-text small, .review-stars-holder label, .rating-text, .skills-perc, .jobsearch-applicants-stats ul li {
+    color: #7d7d7d !important;
+}
+/* end Perfil */
+
+.careerfy-candidate-title i {
+    background-color: #000000 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.jobsearch-checkbox input[type=text] {
+    background-color: #22272b;
+}
+
+.careerfy-breadcrumb {
+    background-color: #22272b;
+}
+
+.jobsearch-add-review-con input[type="text"], .jobsearch-add-review-con textarea, .jobsearch-filterable, .widget_contact_form form {
+    border: 1px solid #393d41;
+    background-color: #22272D;
+}
+
+.jobsearch-filter-sortable {
+    background-color: transparent !Important;
+    border: none !important;
+}
+
+.jobsearch-typo-wrap .rating-num {
+    color: #fff;
+}
+
+.jobsearch-employer-dashboard-nav ul li.active a, .jobsearch-employer-dashboard-nav ul li:hover a {
+    background-color: rgba(255,255,255,.1);
+}
+
+.jobsearch-employer-dashboard-nav ul li a {
+    border: none !important;
+}
+
+.jobsearch-employer-dashboard-nav ul li {
+    border-top: 1px solid #22272D;
+}
+
+.jobsearch-checkbox input[type="radio"] + label span, .jobsearch-checkbox input[type="checkbox"] + label span {
+    background: none !important;
+    border-radius: 1px;
+}
+
+ .jobsearch-checkbox input[type="radio"]:checked + label span, .jobsearch-checkbox input[type="radio"]:hover + label span, .jobsearch-checkbox input[type="checkbox"]:checked + label span, .jobsearch-checkbox input[type="checkbox"]:hover + label span {
+    background: #00dac5 !important;
+    border-radius: 1px;
+    box-shadow: 0px 0px 0px 3px #22272b inset !important;
+}
+
+.jobsearch-checkbox li .filter-post-count {
+    background-color: transparent;
+    color: #00dac5;
+}
+
+.jobsearch-applicants-stats-wrap {
+    background-color: transparent;
+    border: none;
+}
+
+.jobsearch-applicants-stats {
+    border: 1px solid #393d41 !important;
+}
+
+/* editar perfil */
+
+.jobsearch-employer-profile-form li input[type="text"] {
+    border: 1px solid #393d41;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.jobsearch-userprofile-url a {
+    color: #00dac5 !important;
+}
+
+.jobsearch-userprofile-url strong, .jobsearch-resume-education-btn a.el-drag-item, .jobsearch-resume-education-btn a.jobsearch-edit, .jobsearch_box_jobdetail_three_apply small, .jobsearch_box_jobdetail_three_apply_list strong, .careerfy-jobdetail-content-section h1, .jobsearch-jobdetail-list figcaption span, .jobsearch-jobdetail-list {
+    color: #a6a6a6 !important;
+}
+
+.careerfy-loading-section {
+    background-color: #22272C !important;
+}
+
+/* EDITOR VISUAL */
+.wp-editor-container {
+    clear: both;
+    border: 1px solid #3D3F43;
+}
+
+div.mce-panel {
+    border: 0;
+    background: #171C20;
+}
+
+div.mce-toolbar-grp {
+    background: #171C20;
+}
+
+.wp-core-ui .button, .wp-core-ui .button-secondary {
+    color: #000;
+    background: #00dac5;
+    margin-bottom: 13px;
+}
+
+/* END EDITOR VISUAL */
+
+.skill-detail-popup-btn {
+    color: #000;
+}
+
+.jobsearch-dashboard-subtitle {
+    color: #fff !important;
+}
+
+.careerfy-jobdetail-content-section strong a, .jobsearch-description h4, .careerfy-section-title h2, .jobsearch_box_jobdetail_three_apply_social li strong, .jobsearch-jobdetail-list figcaption h2, .jobsearch-section-title h2, .jobsearch-jobdetail-list a, .no-job-match-error strong, .no-job-match-error a, .jobsearch-employer-jobnav ul li span, .careerfy-widget-title h2 {
+    color: #a6a6a6;
+}
+
+.careerfy-jobli-medium3 {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+
+.jobsearch-jobdetail-media li a.jobsearch-plus {
+    background-color: transparent !important;
+}
+
+/* jobsearch form */
+
+
+.jobsearch_box_contact_form form, .jobsearch-employer-wrap-section, .jobsearch-candidate-grid figure, .careerfy-employer-wrap-section  {
+    border: 1px solid #393d41 !important;
+    background-color: #22272b !important;
+}
+
+.ui-widget-content {
+    background: #22272b !important;
+}
+
+.jobsearch-social-icons {
+    background-color: rgba(0,0,0,.1) !important;
+}
+
+.jobsearch_box_contact_form, .widget_contact_form {
+    display: none !Important;
+}
+
+.careerfy-employer-subheader-three h2, .careerfy-fancy-title h2, .careerfy-joblisting-view4-title h2, .shortlist_job_btn, .jobsearch-checkbox-toggle .jobsearch-profile-select select, .jobsearch-wdg-box-title h2, .jobsearch-filterable h2, .careerfy-employer-detail2-tablink ul li a, .jobsearch-login-box h2 {
+    color: #a6a6a6 !Important;
+}
+
+.careerfy-fancy-title.careerfy-fancy-title-two h2, .careerfy-jobdetail-content-list h2, .careerfy-employer-detail2-toparea figcaption h2, .jobsearch-typo-wrap h2 {
+    color: white;
+}
+
+.careerfy-modren-btn a {
+
+    border: 1px solid;
+    padding: 12px 32px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.careerfy-modren-btn a:hover {
+    border: 1px solid #00dac5;
+    color: black;
+}
+
+.onsubmit-apilocs-con a, .jobsearch_box_view_jobs_btn, .shortlist_job_btn:hover, .shortlist_job_btn, .jobsearch-resume-addbtn {
+    border: 1px solid #00dac5 !Important;
+    color: #00dac5 !Important;;
+    background: transparent !Important;;
+}
+
+.careerfy-candidates-style11-top {
+    background-color: #171c20;
+}
+
+.careerfy-footer-five .careerfy-footer-widget {
+    padding: 0;
+}
+
+.copyright-wrap {
+    padding: 18px 0px 10px 0px;
+}
+
+.copyright-five p {
+    padding: 27px 0;
+}
+
+.copyright-five {
+    background-color: #22272b;
+}
+.jobsearch-filterable ul li a {
+    background-color: transparent;
+    border: none;
+    color: #00dac5;
+}
+
+.jobsearch-filterable .clear-tags, .jobsearch_apply_job span.deadline-closed {
+    color: #f8991b !important;
+}
+
+.jobsearch-filterable ul li a i, .terms-priv-chek-con a {
+    color: #00dac5;
+}
+
+.jobsearch-checkbox input[type="text"] {
+    border: 1px solid #393d41;
+    margin-bottom: 10px;
+}
+
+.jobsearch_box_view_jobs ul, .jobsearch-typo-wrap .jobsearch_box_view_jobs ul {
+    padding: 0;
+    border: none;
+}
+
+.jobsearch-typo-wrap .jobsearch_box_view_jobs ul li h2 a {
+    color: white;
+}
+
+.jobsearch-candidate-title i {
+    background-color: black;
+    border: 1px solid black;
+}
+
+.jobsearch-candidate-resume-wrap .jobsearch-candidate-title:after {
+    width: 1px;
+}
+.jobsearch-login-box, .jobsearch-login-box {
+    margin-top: 40px;
+}

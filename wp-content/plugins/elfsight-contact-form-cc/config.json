@@ -1,0 +1,2039 @@
+{
+  "observerUrl": "./preview/dist/contact-form-observer.js",
+  "settings": {
+    "tabs": [
+      {
+        "id": "form",
+        "name": "Form",
+        "active": true
+      },
+      {
+        "id": "mail",
+        "name": "Mail"
+      },
+      {
+        "id": "settings",
+        "name": "Settings"
+      },
+      {
+        "id": "appearance",
+        "name": "Appearance"
+      }
+    ],
+    "properties": [
+      {
+        "id": "ei",
+        "name": "EI",
+        "description": "",
+        "tab": "form",
+        "type": "text",
+        "defaultValue": "",
+        "visible": false
+      },
+      {
+        "id": "fields",
+        "name": "Form Elements",
+        "tab": "form",
+        "type": "form-complex",
+        "complex": {
+          "properties": [
+            {
+              "id": "type",
+              "name": "Element type",
+              "tab": "general",
+              "type": "select-visual",
+              "select": {
+                "options": [
+                  {
+                    "title": "Inputs"
+                  },
+                  {
+                    "value": "text",
+                    "name": "Short Text",
+                    "img": "https://elfsight.com/assets/forms/icons/text.svg"
+                  },
+                  {
+                    "value": "textarea",
+                    "name": "Long Text",
+                    "img": "https://elfsight.com/assets/forms/icons/textarea.svg"
+                  },
+                  {
+                    "value": "email",
+                    "name": "Email",
+                    "img": "https://elfsight.com/assets/forms/icons/email.svg"
+                  },
+                  {
+                    "value": "url",
+                    "name": "URL",
+                    "img": "https://elfsight.com/assets/forms/icons/url.svg"
+                  },
+                  {
+                    "value": "phone",
+                    "name": "Phone",
+                    "img": "https://elfsight.com/assets/forms/icons/phone.svg"
+                  },
+                  {
+                    "value": "number",
+                    "name": "Number",
+                    "img": "https://elfsight.com/assets/forms/icons/number.svg"
+                  },
+                  {
+                    "value": "datepicker",
+                    "name": "Date & Time",
+                    "img": "https://elfsight.com/assets/forms/icons/date.svg"
+                  },
+                  {
+                    "value": "file",
+                    "name": "File",
+                    "img": "https://elfsight.com/assets/forms/icons/clip.svg"
+                  },
+                  {
+                    "title": "Selects"
+                  },
+                  {
+                    "value": "checkbox",
+                    "name": "Checkboxes",
+                    "img": "https://elfsight.com/assets/forms/icons/checkbox.svg"
+                  },
+                  {
+                    "value": "radio",
+                    "name": "Radio Buttons",
+                    "img": "https://elfsight.com/assets/forms/icons/multiple-choice.svg"
+                  },
+                  {
+                    "value": "dropdown",
+                    "name": "Dropdown",
+                    "img": "https://elfsight.com/assets/forms/icons/dropdown.svg"
+                  },
+                  {
+                    "title": "Static Text"
+                  },
+                  {
+                    "value": "heading",
+                    "name": "Heading",
+                    "img": "https://elfsight.com/assets/forms/icons/heading.svg"
+                  },
+                  {
+                    "value": "caption",
+                    "name": "Paragraph Text",
+                    "img": "https://elfsight.com/assets/forms/icons/text-block.svg"
+                  },
+                  {
+                    "value": "label",
+                    "name": "Label",
+                    "img": "https://elfsight.com/assets/forms/icons/label.svg?v=2"
+                  },
+                  {
+                    "title": "Rating Scales"
+                  },
+                  {
+                    "value": "scaleNumbers",
+                    "name": "Number Scale",
+                    "img": "https://elfsight.com/assets/forms/icons/linear-scale.svg"
+                  },
+                  {
+                    "value": "scaleStars",
+                    "name": "Star Scale",
+                    "img": "https://elfsight.com/assets/forms/icons/stars.svg"
+                  },
+                  {
+                    "value": "scaleSmiles",
+                    "name": "Smiley Scale",
+                    "img": "https://elfsight.com/assets/forms/icons/smile.svg"
+                  },
+                  {
+                    "value": "scaleThumb",
+                    "name": "Thumb Scale",
+                    "img": "https://elfsight.com/assets/forms/icons/thumb.svg"
+                  },
+                  {
+                    "title": "Structure"
+                  },
+                  {
+                    "value": "group",
+                    "name": "Group",
+                    "img": "https://elfsight.com/assets/forms/icons/group.svg"
+                  },
+                  {
+                    "value": "divider",
+                    "name": "Divider",
+                    "img": "https://elfsight.com/assets/forms/icons/divider.svg"
+                  },
+                  {
+                    "value": "hidden",
+                    "name": "Hidden",
+                    "img": "https://elfsight.com/assets/forms/icons/hidden.svg?v=1"
+                  }
+                ],
+                "layout": "two-cols"
+              },
+              "defaultValue": "",
+              "visible": false,
+              "closeOnClick": true,
+              "description": "Here you can choose the type of element to add to your form, for instance, short or long text, dropdown, checkboxes, etc."
+            },
+            {
+              "id": "label",
+              "name": "Label",
+              "type": "text",
+              "defaultValue": "",
+              "allowEmpty": true,
+              "description": "Name your element. The label will be displayed above the field.",
+              "groups": "text email phone url number textarea checkbox datepicker scaleStars scaleNumbers scaleThumb radio scaleSmiles dropdown file hidden"
+            },
+            {
+              "id": "name",
+              "name": "Name",
+              "type": "text",
+              "defaultValue": "",
+              "allowEmpty": true,
+              "description": "Name your group. The name will be displayed in the progress panel.",
+              "groups": "group"
+            },
+            {
+              "id": "placeholder",
+              "name": "Placeholder",
+              "type": "text",
+              "defaultValue": "",
+              "allowEmpty": true,
+              "description": "Placeholder will be displayed inside the field. Use it as an example of input data or to demonstrate the required format. Also, to use as an alternative label, enter element name here.",
+              "groups": "text email phone textarea url number datepicker dropdown"
+            },
+            {
+              "id": "options",
+              "name": "Options",
+              "type": "textarea",
+              "defaultValue": "Option 1\nOption 2",
+              "allowEmpty": true,
+              "description": "List the options to choose from.",
+              "groups": "checkbox radio dropdown scaleThumb"
+            },
+            {
+              "id": "scaleNumbersMin",
+              "name": "Min",
+              "type": "select",
+              "select": {
+                "options": [
+                  {
+                    "value": 0,
+                    "name": "0"
+                  },
+                  {
+                    "value": 1,
+                    "name": "1"
+                  }
+                ]
+              },
+              "defaultValue": 1,
+              "description": "Set the lowest scale value.",
+              "groups": "scaleNumbers"
+            },
+            {
+              "id": "scaleNumbersMax",
+              "name": "Max",
+              "type": "select",
+              "select": {
+                "options": [
+                  {
+                    "value": 2,
+                    "name": "2"
+                  },
+                  {
+                    "value": 3,
+                    "name": "3"
+                  },
+                  {
+                    "value": 4,
+                    "name": "4"
+                  },
+                  {
+                    "value": 5,
+                    "name": "5"
+                  },
+                  {
+                    "value": 6,
+                    "name": "6"
+                  },
+                  {
+                    "value": 7,
+                    "name": "7"
+                  },
+                  {
+                    "value": 8,
+                    "name": "8"
+                  },
+                  {
+                    "value": 9,
+                    "name": "9"
+                  },
+                  {
+                    "value": 10,
+                    "name": "10"
+                  }
+                ]
+              },
+              "defaultValue": 10,
+              "description": "Set the highest scale value.",
+              "groups": "scaleNumbers"
+            },
+            {
+              "id": "leftCaption",
+              "name": "Left caption",
+              "type": "text",
+              "defaultValue": "Not likely",
+              "allowEmpty": true,
+              "description": "Set the caption for the lowest scale value.",
+              "groups": "scaleNumbers"
+            },
+            {
+              "id": "rightCaption",
+              "name": "Right caption",
+              "type": "text",
+              "defaultValue": "Very likely",
+              "allowEmpty": true,
+              "description": "Set the caption for the highest scale value.",
+              "groups": "scaleNumbers"
+            },
+            {
+              "id": "fileLinkCaption",
+              "name": "File button text",
+              "type": "text",
+              "defaultValue": "Choose file",
+              "allowEmpty": true,
+              "description": "Set the text for button in file upload control.",
+              "groups": "file"
+            },
+            {
+              "id": "fileDragCaption",
+              "name": "File drag text",
+              "type": "text",
+              "defaultValue": "or drag & drop here",
+              "allowEmpty": true,
+              "description": "Set the text for drag in file upload control.",
+              "groups": "file"
+            },
+            {
+              "id": "text",
+              "name": "Text",
+              "type": "textarea",
+              "textarea": {
+                "enableRichEdit": true,
+                "enableRichEditHtml": true
+              },
+              "defaultValue": "Text",
+              "allowEmpty": true,
+              "description": "Enter your text here.",
+              "groups": "caption"
+            },
+            {
+              "id": "title",
+              "name": "Heading",
+              "type": "text",
+              "defaultValue": "Heading",
+              "allowEmpty": true,
+              "description": "Enter your heading text here.",
+              "groups": "heading"
+            },
+            {
+              "id": "caption",
+              "name": "Caption",
+              "type": "text",
+              "defaultValue": "",
+              "allowEmpty": true,
+              "description": "",
+              "groups": "heading"
+            },
+            {
+              "id": "value",
+              "name": "Value",
+              "type": "text",
+              "defaultValue": "",
+              "allowEmpty": true,
+              "description": "",
+              "groups": "hidden"
+            },
+            {
+              "id": "labelText",
+              "name": "Label",
+              "type": "text",
+              "defaultValue": "Label",
+              "allowEmpty": true,
+              "description": "",
+              "groups": "label"
+            },
+            {
+              "id": "dateTime",
+              "name": "Date and time",
+              "type": "select-inline",
+              "selectInline": {
+                "options": [
+                  {
+                    "value": "date",
+                    "name": "Date"
+                  },
+                  {
+                    "value": "dateAndTime",
+                    "name": "Date&Time"
+                  },
+                  {
+                    "value": "time",
+                    "name": "Time"
+                  }
+                ]
+              },
+              "defaultValue": "date",
+              "description": "Select the required data: date, date and time, time.",
+              "groups": "datepicker"
+            },
+            {
+              "id": "dateFormat",
+              "name": "Date format",
+              "type": "select",
+              "select": {
+                "options": [
+                  {
+                    "value": "d.m.Y",
+                    "name": "d.m.Y"
+                  },
+                  {
+                    "value": "d/m/Y",
+                    "name": "d/m/Y"
+                  },
+                  {
+                    "value": "d-m-Y",
+                    "name": "d-m-Y"
+                  },
+                  {
+                    "value": "m/d/Y",
+                    "name": "m/d/Y"
+                  },
+                  {
+                    "value": "Y-m-d",
+                    "name": "Y-m-d"
+                  },
+                  {
+                    "value": "Y.m.d",
+                    "name": "Y.m.d"
+                  },
+                  {
+                    "value": "Y/m/d",
+                    "name": "Y/m/d"
+                  }
+                ],
+                "enableInput": true
+              },
+              "defaultValue": "d.m.Y",
+              "description": "Select date input format.",
+              "groups": "datepicker"
+            },
+            {
+              "id": "timeFormat",
+              "name": "Time format",
+              "type": "select",
+              "select": {
+                "options": [
+                  {
+                    "value": "H:i",
+                    "name": "24-hour"
+                  },
+                  {
+                    "value": "h:i K",
+                    "name": "12-hour"
+                  }
+                ],
+                "enableInput": true
+              },
+              "defaultValue": "H:i",
+              "description": "Select time input format.",
+              "groups": "datepicker"
+            },
+            {
+              "id": "starsCount",
+              "name": "Stars Count",
+              "type": "select-inline",
+              "selectInline": {
+                "options": [
+                  {
+                    "value": 3,
+                    "name": "3"
+                  },
+                  {
+                    "value": 5,
+                    "name": "5"
+                  }
+                ]
+              },
+              "defaultValue": 5,
+              "description": "Set the maximum number of stars.",
+              "groups": "scaleStars"
+            },
+            {
+              "id": "required",
+              "name": "Make this field required",
+              "type": "toggle",
+              "defaultValue": false,
+              "description": "Set this to ON to make a field required. The user will have to fill this field before submitting the form. Tip: Too many required fields decrease the chances of submitting a form.",
+              "groups": "text email phone url number textarea checkbox datepicker scaleStars scaleNumbers scaleThumb radio scaleSmiles dropdown file"
+            },
+            {
+              "id": "description",
+              "name": "Description",
+              "type": "textarea",
+              "defaultValue": "",
+              "description": "Add a text to your element, if required. The description will be displayed below the label.",
+              "groups": "group text email phone url number textarea checkbox datepicker scaleStars scaleNumbers scaleThumb radio scaleSmiles dropdown file"
+            },
+            {
+              "id": "columnWidth",
+              "name": "Column layout",
+              "type": "select-inline",
+              "selectInline": {
+                "options": [
+                  {
+                    "value": 100,
+                    "name": "1"
+                  },
+                  {
+                    "value": 50,
+                    "name": "2"
+                  },
+                  {
+                    "value": 33.333333,
+                    "name": "3"
+                  }
+                ]
+              },
+              "defaultValue": 100,
+              "description": "Use this option to organize the form elements in columns. Choose the same value for several elements that you need to arrange into columns.",
+              "groups": "text email phone url number textarea caption datepicker scaleStars scaleNumbers scaleThumb scaleSmiles dropdown"
+            },
+            {
+              "id": "elementColumnWidth",
+              "name": "Columns",
+              "type": "select-inline",
+              "selectInline": {
+                "options": [
+                  {
+                    "value": 100,
+                    "name": "1"
+                  },
+                  {
+                    "value": 50,
+                    "name": "2"
+                  },
+                  {
+                    "value": 33.333333,
+                    "name": "3"
+                  }
+                ]
+              },
+              "defaultValue": 100,
+              "description": "Use this setting to arrange the options into columns.",
+              "groups": "checkbox radio"
+            },
+            {
+              "id": "fileAllowedAll",
+              "name": "Allowed file types",
+              "type": "select-inline",
+              "selectInline": {
+                "options": [
+                  {
+                    "name": "Any",
+                    "value": true
+                  },
+                  {
+                    "name": "Specified",
+                    "value": false
+                  }
+                ]
+              },
+              "defaultValue": true,
+              "description": "Select allowed to upload file types.",
+              "groups": "file"
+            },
+            {
+              "id": "fileAllowed",
+              "name": "Specify allowed file types",
+              "visible": false,
+              "type": "tags",
+              "tags": {
+                "placeholder": ".ext"
+              },
+              "defaultValue": [
+                ".jpg",
+                ".jpeg",
+                ".png",
+                ".gif",
+                ".txt",
+                ".pdf",
+                ".doc",
+                ".docx",
+                ".pages",
+                ".numbers",
+                ".xls",
+                ".xlsx",
+                ".odt",
+                ".ppt",
+                ".pptx",
+                ".pps",
+                ".ppsx",
+                ".html"
+              ],
+              "description": "Select allowed to upload file types.",
+              "groups": "file"
+            },
+            {
+              "id": "fileMax",
+              "name": "Max file size (MB)",
+              "visible": false,
+              "type": "number",
+              "number": {
+                "min": 0,
+                "max": 25
+              },
+              "defaultValue": 25,
+              "description": "Set maximum file size (MB).",
+              "groups": "file"
+            },
+            {
+              "id": "fields",
+              "name": "Elements",
+              "defaultValue": "",
+              "description": "Add elements to the group same way you did to the form.",
+              "groups": "group",
+              "type": "form-complex",
+              "complex": {
+                "properties": [
+                  {
+                    "id": "type",
+                    "name": "Type",
+                    "tab": "general",
+                    "type": "select-visual",
+                    "select": {
+                      "options": [
+                        {
+                          "title": "Inputs"
+                        },
+                        {
+                          "value": "text",
+                          "name": "Short Text",
+                          "img": "https://elfsight.com/assets/forms/icons/text.svg"
+                        },
+                        {
+                          "value": "textarea",
+                          "name": "Long Text",
+                          "img": "https://elfsight.com/assets/forms/icons/textarea.svg"
+                        },
+                        {
+                          "value": "email",
+                          "name": "Email",
+                          "img": "https://elfsight.com/assets/forms/icons/email.svg"
+                        },
+                        {
+                          "value": "url",
+                          "name": "URL",
+                          "img": "https://elfsight.com/assets/forms/icons/url.svg"
+                        },
+                        {
+                          "value": "phone",
+                          "name": "Phone",
+                          "img": "https://elfsight.com/assets/forms/icons/phone.svg"
+                        },
+                        {
+                          "value": "number",
+                          "name": "Number",
+                          "img": "https://elfsight.com/assets/forms/icons/number.svg"
+                        },
+                        {
+                          "value": "datepicker",
+                          "name": "Date & Time",
+                          "img": "https://elfsight.com/assets/forms/icons/date.svg"
+                        },
+                        {
+                          "value": "file",
+                          "name": "File",
+                          "img": "https://elfsight.com/assets/forms/icons/clip.svg"
+                        },
+                        {
+                          "title": "Selects"
+                        },
+                        {
+                          "value": "checkbox",
+                          "name": "Checkboxes",
+                          "img": "https://elfsight.com/assets/forms/icons/checkbox.svg"
+                        },
+                        {
+                          "value": "radio",
+                          "name": "Radio Buttons",
+                          "img": "https://elfsight.com/assets/forms/icons/multiple-choice.svg"
+                        },
+                        {
+                          "value": "dropdown",
+                          "name": "Dropdown",
+                          "img": "https://elfsight.com/assets/forms/icons/dropdown.svg"
+                        },
+                        {
+                          "title": "Static Text"
+                        },
+                        {
+                          "value": "heading",
+                          "name": "Heading",
+                          "img": "https://elfsight.com/assets/forms/icons/heading.svg"
+                        },
+                        {
+                          "value": "caption",
+                          "name": "Paragraph Text",
+                          "img": "https://elfsight.com/assets/forms/icons/text-block.svg"
+                        },
+                        {
+                          "value": "label",
+                          "name": "Label",
+                          "img": "https://elfsight.com/assets/forms/icons/label.svg?v=2"
+                        },
+                        {
+                          "title": "Rating Scales"
+                        },
+                        {
+                          "value": "scaleNumbers",
+                          "name": "Number Scale",
+                          "img": "https://elfsight.com/assets/forms/icons/linear-scale.svg"
+                        },
+                        {
+                          "value": "scaleStars",
+                          "name": "Star Scale",
+                          "img": "https://elfsight.com/assets/forms/icons/stars.svg"
+                        },
+                        {
+                          "value": "scaleSmiles",
+                          "name": "Smiley Scale",
+                          "img": "https://elfsight.com/assets/forms/icons/smile.svg"
+                        },
+                        {
+                          "value": "scaleThumb",
+                          "name": "Thumb Scale",
+                          "img": "https://elfsight.com/assets/forms/icons/thumb.svg"
+                        },
+                        {
+                          "title": "Structure"
+                        },
+                        {
+                          "value": "divider",
+                          "name": "Divider",
+                          "img": "https://elfsight.com/assets/forms/icons/divider.svg"
+                        },
+                        {
+                          "value": "hidden",
+                          "name": "Hidden",
+                          "img": "https://elfsight.com/assets/forms/icons/hidden.svg?v=1"
+                        }
+                      ],
+                      "layout": "two-cols"
+                    },
+                    "defaultValue": "",
+                    "visible": false,
+                    "closeOnClick": true,
+                    "description": "This option allows to choose one of the 5 predefined form styles. Choose the one that suits you best."
+                  },
+                  {
+                    "id": "label",
+                    "name": "Label",
+                    "type": "text",
+                    "defaultValue": "",
+                    "allowEmpty": false,
+                    "description": "Name your element. The label will be displayed above the field.",
+                    "groups": "text email phone url number textarea checkbox datepicker scaleStars scaleNumbers scaleThumb radio scaleSmiles dropdown file hidden"
+                  },
+                  {
+                    "id": "label",
+                    "name": "Name",
+                    "type": "text",
+                    "defaultValue": "",
+                    "allowEmpty": true,
+                    "description": "Name your element. The label will be displayed above the field.",
+                    "groups": "group"
+                  },
+                  {
+                    "id": "placeholder",
+                    "name": "Placeholder",
+                    "type": "text",
+                    "defaultValue": "",
+                    "allowEmpty": true,
+                    "description": "Placeholder will be displayed inside the field. Use it as an example of input data or to demonstrate the required format. Also, to use as an alternative label, enter element name here.",
+                    "groups": "text email phone textarea url number datepicker file dropdown"
+                  },
+                  {
+                    "id": "options",
+                    "name": "Options",
+                    "type": "textarea",
+                    "defaultValue": "Option 1\nOption 2",
+                    "allowEmpty": true,
+                    "description": "List the options to choose from.",
+                    "groups": "checkbox radio dropdown scaleThumb"
+                  },
+                  {
+                    "id": "scaleNumbersMin",
+                    "name": "Min",
+                    "type": "select",
+                    "select": {
+                      "options": [
+                        {
+                          "value": 0,
+                          "name": "0"
+                        },
+                        {
+                          "value": 1,
+                          "name": "1"
+                        }
+                      ]
+                    },
+                    "defaultValue": 1,
+                    "description": "Set the lowest scale value.",
+                    "groups": "scaleNumbers"
+                  },
+                  {
+                    "id": "scaleNumbersMax",
+                    "name": "Max",
+                    "type": "select",
+                    "select": {
+                      "options": [
+                        {
+                          "value": 2,
+                          "name": "2"
+                        },
+                        {
+                          "value": 3,
+                          "name": "3"
+                        },
+                        {
+                          "value": 4,
+                          "name": "4"
+                        },
+                        {
+                          "value": 5,
+                          "name": "5"
+                        },
+                        {
+                          "value": 6,
+                          "name": "6"
+                        },
+                        {
+                          "value": 7,
+                          "name": "7"
+                        },
+                        {
+                          "value": 8,
+                          "name": "8"
+                        },
+                        {
+                          "value": 9,
+                          "name": "9"
+                        },
+                        {
+                          "value": 10,
+                          "name": "10"
+                        }
+                      ]
+                    },
+                    "defaultValue": 10,
+                    "description": "Set the highest scale value.",
+                    "groups": "scaleNumbers"
+                  },
+                  {
+                    "id": "leftCaption",
+                    "name": "Left caption",
+                    "type": "text",
+                    "defaultValue": "Not likely",
+                    "allowEmpty": true,
+                    "description": "Set the caption for the lowest scale value",
+                    "groups": "scaleNumbers"
+                  },
+                  {
+                    "id": "rightCaption",
+                    "name": "Right caption",
+                    "type": "text",
+                    "defaultValue": "Very likely",
+                    "allowEmpty": true,
+                    "description": "Set the caption for the highest scale value",
+                    "groups": "scaleNumbers"
+                  },
+                  {
+                    "id": "fileLinkCaption",
+                    "name": "File link caption",
+                    "type": "text",
+                    "defaultValue": "Choose file",
+                    "allowEmpty": true,
+                    "description": "Set the caption for button.",
+                    "groups": "file"
+                  },
+                  {
+                    "id": "fileDragCaption",
+                    "name": "File drag caption",
+                    "type": "text",
+                    "defaultValue": "or drag & drop here",
+                    "allowEmpty": true,
+                    "description": "Set the caption for drag.",
+                    "groups": "file"
+                  },
+                  {
+                    "id": "text",
+                    "name": "Text",
+                    "type": "textarea",
+                    "textarea": {
+                      "enableRichEdit": true,
+                      "enableRichEditHtml": true
+                    },
+                    "defaultValue": "Text",
+                    "description": "Enter your text here.",
+                    "groups": "caption"
+                  },
+                  {
+                    "id": "title",
+                    "name": "Heading",
+                    "type": "text",
+                    "defaultValue": "Heading",
+                    "allowEmpty": true,
+                    "description": "Enter your heading text here.",
+                    "groups": "heading"
+                  },
+                  {
+                    "id": "caption",
+                    "name": "Caption",
+                    "type": "text",
+                    "defaultValue": "",
+                    "allowEmpty": true,
+                    "description": "",
+                    "groups": "heading"
+                  },
+                  {
+                    "id": "value",
+                    "name": "Value",
+                    "type": "text",
+                    "defaultValue": "",
+                    "allowEmpty": true,
+                    "description": "",
+                    "groups": "hidden"
+                  },
+                  {
+                    "id": "labelText",
+                    "name": "Label",
+                    "type": "text",
+                    "defaultValue": "Label",
+                    "allowEmpty": true,
+                    "description": "",
+                    "groups": "label"
+                  },
+                  {
+                    "id": "dateTime",
+                    "name": "Date and time",
+                    "type": "select-inline",
+                    "selectInline": {
+                      "options": [
+                        {
+                          "value": "date",
+                          "name": "Date"
+                        },
+                        {
+                          "value": "dateAndTime",
+                          "name": "Date&Time"
+                        },
+                        {
+                          "value": "time",
+                          "name": "Time"
+                        }
+                      ]
+                    },
+                    "defaultValue": "date",
+                    "description": "Select the required data: date, date and time, time.",
+                    "groups": "datepicker"
+                  },
+                  {
+                    "id": "dateFormat",
+                    "name": "Date format",
+                    "type": "select",
+                    "select": {
+                      "options": [
+                        {
+                          "value": "d.m.Y",
+                          "name": "d.m.Y"
+                        },
+                        {
+                          "value": "d/m/Y",
+                          "name": "d/m/Y"
+                        },
+                        {
+                          "value": "d-m-Y",
+                          "name": "d-m-Y"
+                        },
+                        {
+                          "value": "m/d/Y",
+                          "name": "m/d/Y"
+                        },
+                        {
+                          "value": "Y-m-d",
+                          "name": "Y-m-d"
+                        },
+                        {
+                          "value": "Y.m.d",
+                          "name": "Y.m.d"
+                        },
+                        {
+                          "value": "Y/m/d",
+                          "name": "Y/m/d"
+                        }
+                      ],
+                      "enableInput": true
+                    },
+                    "defaultValue": "d.m.Y",
+                    "description": "Select date input format.",
+                    "groups": "datepicker"
+                  },
+                  {
+                    "id": "timeFormat",
+                    "name": "Time format",
+                    "type": "select",
+                    "select": {
+                      "options": [
+                        {
+                          "value": "H:i",
+                          "name": "24-hour"
+                        },
+                        {
+                          "value": "h:i K",
+                          "name": "12-hour"
+                        }
+                      ],
+                      "enableInput": true
+                    },
+                    "defaultValue": "H:i",
+                    "description": "Select time input format.",
+                    "groups": "datepicker"
+                  },
+                  {
+                    "id": "starsCount",
+                    "name": "Stars Count",
+                    "type": "select-inline",
+                    "selectInline": {
+                      "options": [
+                        {
+                          "value": 3,
+                          "name": "3"
+                        },
+                        {
+                          "value": 5,
+                          "name": "5"
+                        }
+                      ]
+                    },
+                    "defaultValue": 5,
+                    "description": "Set the maximum number of stars",
+                    "groups": "scaleStars"
+                  },
+                  {
+                    "id": "required",
+                    "name": "Required field",
+                    "type": "toggle",
+                    "defaultValue": false,
+                    "description": "Set this to ON to make a field required. The user will have to fill this field before submitting the form. Tip: Too many required fields decrease the chances of submitting a form.",
+                    "groups": "text email phone url number textarea checkbox datepicker scaleStars scaleNumbers scaleThumb radio scaleSmiles dropdown file"
+                  },
+                  {
+                    "id": "description",
+                    "name": "Description",
+                    "type": "textarea",
+                    "defaultValue": "",
+                    "description": "Add a text to your element, if required. The description will be displayed below the label.",
+                    "groups": "group text email phone url number textarea checkbox datepicker scaleStars scaleNumbers scaleThumb radio scaleSmiles dropdown file"
+                  },
+                  {
+                    "id": "columnWidth",
+                    "name": "Column layout",
+                    "type": "select-inline",
+                    "selectInline": {
+                      "options": [
+                        {
+                          "value": 100,
+                          "name": "1"
+                        },
+                        {
+                          "value": 50,
+                          "name": "2"
+                        },
+                        {
+                          "value": 33.333333,
+                          "name": "3"
+                        }
+                      ]
+                    },
+                    "defaultValue": 100,
+                    "description": "Use this option to organize the form elements in columns. Choose the same value for several elements that you need to arrange into columns.",
+                    "groups": "text email phone url number textarea caption datepicker scaleStars scaleNumbers scaleThumb scaleSmiles dropdown"
+                  },
+                  {
+                    "id": "elementColumnWidth",
+                    "name": "Columns",
+                    "type": "select-inline",
+                    "selectInline": {
+                      "options": [
+                        {
+                          "value": 100,
+                          "name": "1"
+                        },
+                        {
+                          "value": 50,
+                          "name": "2"
+                        },
+                        {
+                          "value": 33.333333,
+                          "name": "3"
+                        }
+                      ]
+                    },
+                    "defaultValue": 100,
+                    "description": "Use this setting to arrange the options into columns.",
+                    "groups": "checkbox radio"
+                  },
+                  {
+                    "id": "fileAllowedAll",
+                    "name": "Allowed file types",
+                    "type": "select-inline",
+                    "selectInline": {
+                      "options": [
+                        {
+                          "name": "Any",
+                          "value": true
+                        },
+                        {
+                          "name": "Specified",
+                          "value": false
+                        }
+                      ]
+                    },
+                    "defaultValue": true,
+                    "description": "Select allowed to upload file types.",
+                    "groups": "file"
+                  },
+                  {
+                    "id": "fileAllowed",
+                    "name": "Specify allowed file types",
+                    "visible": false,
+                    "type": "tags",
+                    "tags": {
+                      "placeholder": ".ext"
+                    },
+                    "defaultValue": [
+                      ".jpg",
+                      ".jpeg",
+                      ".png",
+                      ".gif",
+                      ".txt",
+                      ".pdf",
+                      ".doc",
+                      ".docx",
+                      ".pages",
+                      ".numbers",
+                      ".xls",
+                      ".xlsx",
+                      ".odt",
+                      ".ppt",
+                      ".pptx",
+                      ".pps",
+                      ".ppsx",
+                      ".html"
+                    ],
+                    "description": "Select allowed to upload file types.",
+                    "groups": "file"
+                  },
+                  {
+                    "id": "fileMax",
+                    "name": "Max file size (MB)",
+                    "visible": false,
+                    "type": "number",
+                    "number": {
+                      "min": 0,
+                      "max": 25
+                    },
+                    "defaultValue": 25,
+                    "description": "Set maximum file size (MB).",
+                    "groups": "file"
+                  },
+                  {
+                    "id": "id",
+                    "name": "Field ID",
+                    "description": "Field ID is generated from label and used to preset field values via URL params and in mail settings.",
+                    "type": "text",
+                    "text": {
+                      "disabled": true
+                    },
+                    "defaultValue": "",
+                    "groups": "text email phone url number textarea checkbox datepicker scaleStars scaleNumbers scaleThumb radio scaleSmiles dropdown"
+                  }
+                ],
+                "nameProperty": "label",
+                "controlGroupProperty": "type"
+              }
+            },
+            {
+              "id": "id",
+              "name": "Field ID",
+              "description": "Field ID is generated from label and used to preset field values via URL params and in mail settings.",
+              "type": "text",
+              "text": {
+                "disabled": true
+              },
+              "defaultValue": "",
+              "groups": "text email phone url number textarea checkbox datepicker scaleStars scaleNumbers scaleThumb radio scaleSmiles dropdown"
+            }
+          ],
+          "nameProperty": "label",
+          "controlGroupProperty": "type"
+        },
+        "description": "Build your form with the elements you need.",
+        "visible": "",
+        "defaultValue": [
+          {
+            "type": "text",
+            "placeholder": "John Doe",
+            "description": "",
+            "label": "Your name",
+            "required": false,
+            "columnWidth": 50
+          },
+          {
+            "type": "email",
+            "label": "Email address",
+            "description": "",
+            "placeholder": "example@domain.com",
+            "required": true,
+            "columnWidth": 50
+          },
+          {
+            "type": "phone",
+            "label": "Phone",
+            "placeholder": "+1-999-999-9999",
+            "description": "",
+            "required": false,
+            "columnWidth": 50
+          },
+          {
+            "type": "url",
+            "label": "Website URL",
+            "description": "",
+            "placeholder": "https:\/\/example.com",
+            "required": false,
+            "columnWidth": 50
+          },
+          {
+            "type": "textarea",
+            "label": "Message",
+            "description": "",
+            "placeholder": "Tell us briefly about your needs",
+            "required": true,
+            "columnWidth": 100
+          },
+          {
+            "type": "file",
+            "label": "Attachment",
+            "description": "",
+            "fileLinkCaption": "Choose file",
+            "fileDragCaption": "or drag & drop here",
+            "fileAllowedAll": true,
+            "fileMax": 25,
+            "required": false
+          }
+        ]
+      },
+      {
+        "id": "header",
+        "name": "Header",
+        "tab": "form",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "headerActive",
+              "name": "Show form header",
+              "type": "toggle",
+              "defaultValue": true,
+              "description": "Show/Hide the form header."
+            },
+            {
+              "id": "headerTitle",
+              "name": "Header title",
+              "type": "text",
+              "defaultValue": "Get in Touch",
+              "description": "This title will be displayed above the form."
+            },
+            {
+              "id": "headerText",
+              "name": "Header text",
+              "type": "textarea",
+              "defaultValue": "Leave your message and we'll get back to you shortly.",
+              "textarea": {
+                "enableRichEdit": true,
+                "enableRichEditHtml": true
+              },
+              "description": "Here you can add a text that will be displayed under the title, above the form. Enter any relevant information - response times, calls to action, any other specific information."
+            },
+            {
+              "id": "headerPictureUrl",
+              "name": "Header picture",
+              "type": "select-visual",
+              "select": {
+                "options": [
+                  {
+                    "value": "",
+                    "name": "None",
+                    "img": "https://elfsight.com/assets/forms/icons/empty.svg"
+                  },
+                  {
+                    "value": "message",
+                    "name": "Message",
+                    "img": "https://elfsight.com/assets/forms/icons/message.svg"
+                  },
+                  {
+                    "value": "form",
+                    "name": "Form",
+                    "img": "https://elfsight.com/assets/forms/icons/form.svg"
+                  },
+                  {
+                    "value": "dialog",
+                    "name": "Dialog",
+                    "img": "https://elfsight.com/assets/forms/icons/dialog.svg"
+                  },
+                  {
+                    "value": "feedback",
+                    "name": "Feedback",
+                    "img": "https://elfsight.com/assets/forms/icons/feedback.svg"
+                  },
+                  {
+                    "value": "date",
+                    "name": "Calendar",
+                    "img": "https://elfsight.com/assets/forms/icons/date.svg"
+                  },
+                  {
+                    "value": "heart",
+                    "name": "Heart",
+                    "img": "https://elfsight.com/assets/forms/icons/heart.svg"
+                  },
+                  {
+                    "value": "support",
+                    "name": "Support",
+                    "img": "https://elfsight.com/assets/forms/icons/support.svg"
+                  },
+                  {
+                    "value": "phone",
+                    "name": "Phone",
+                    "img": "https://elfsight.com/assets/forms/icons/phone.svg"
+                  },
+                  {
+                    "value": "compose",
+                    "name": "Compose",
+                    "img": "https://elfsight.com/assets/forms/icons/compose.svg"
+                  },
+                  {
+                    "value": "doc",
+                    "name": "Doc",
+                    "img": "https://elfsight.com/assets/forms/icons/doc.svg"
+                  }
+                ],
+                "layout": "two-cols"
+              },
+              "defaultValue": "message",
+              "description": "Paste the URL of the image you want to display left of the title. You can display a message icon, a company logo or the picture of the contact."
+            }
+          ]
+        }
+      },
+      {
+        "id": "footer",
+        "name": "Footer",
+        "tab": "form",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "footerText",
+              "name": "Footer text",
+              "type": "textarea",
+              "defaultValue": "",
+              "textarea": {
+                "enableRichEdit": true,
+                "enableRichEditHtml": true
+              },
+              "description": ""
+            }
+          ]
+        }
+      },
+      {
+        "tab": "mail",
+        "type": "static-html",
+        "staticHtml": {
+          "content": "<div style=\"font-size:13px;\">You can use form field values as mail-tags in the settings. The following mail-tags are available:<ul style=\"padding: 0 0 0 16px\"><li style=\"line-height: 1.4; margin-bottom: 0\"><b>[form-data]</b> outputs all form fields in a list, in name and value format.</li><li style=\"line-height: 1.4; margin-bottom: 0\"><b>[website-url]</b> outputs the website URL the message has come from.</li><li style=\"line-height: 1.4; margin-bottom: 0\"><b>[page-url]</b> outputs the page URL the message has come from.</li><li style=\"line-height: 1.4; margin-bottom: 0\"><b>[field-id]</b> outputs the value of a specified field in your form. You will get each field's id in its settings.</li></ul></div>"
+        }
+      },
+      {
+        "id": "mailTo",
+        "name": "To",
+        "description": "Set the emails to forward the messages to.",
+        "tab": "mail",
+        "type": "tags",
+        "tags": {
+          "placeholder": "example@domain.com"
+        },
+        "allowEmpty": false,
+        "defaultValue": [],
+        "private": true
+      },
+      {
+        "id": "mailSubject",
+        "name": "Subject",
+        "tab": "mail",
+        "type": "text",
+        "defaultValue": "New message from [website-url]",
+        "description": "",
+        "private": true
+      },
+      {
+        "id": "mailTemplate",
+        "name": "Mail template",
+        "tab": "mail",
+        "type": "textarea",
+        "textarea": {
+          "enableRichEdit": true,
+          "enableRichEditHtml": true
+        },
+        "defaultValue": "<p>This message was sent from website [website-url]:</p><br>[form-data]<br>",
+        "caption": "",
+        "description": "",
+        "private": true
+      },
+      {
+        "type": "divider",
+        "tab": "mail"
+      },
+      {
+        "id": "mailAdvancedSubgroup",
+        "name": "Additional Mail Settings",
+        "tab": "mail",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "mailCC",
+              "name": "Copy (Cc)",
+              "description": "Set the emails to forward copy the messages to.",
+              "type": "tags",
+              "tags": {
+                "placeholder": "example@domain.com"
+              },
+              "defaultValue": [],
+              "private": true
+            },
+            {
+              "id": "mailBCC",
+              "name": "Hidden Copy (Bcc)",
+              "description": "Set the emails to forward hidden copy the messages to.",
+              "type": "tags",
+              "tags": {
+                "placeholder": "example@domain.com"
+              },
+              "defaultValue": [],
+              "private": true
+            },
+            {
+              "id": "mailReplyTo",
+              "name": "Reply To",
+              "description": "",
+              "tab": "mail",
+              "type": "text",
+              "text": {
+                "placeholder": "[field-id]"
+              },
+              "defaultValue": "",
+              "private": true
+            }
+          ]
+        },
+        "private": true
+      },
+      {
+        "id": "actionAfterSubmitGroup",
+        "name": "Action After Submit",
+        "tab": "settings",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "actionAfterSubmit",
+              "name": "Action after form submission",
+              "type": "select",
+              "select": {
+                "options": [
+                  {
+                    "value": "message",
+                    "name": "Thank you message"
+                  },
+                  {
+                    "value": "redirect",
+                    "name": "Redirect to page"
+                  },
+                  {
+                    "value": "hide",
+                    "name": "Hide form"
+                  }
+                ]
+              },
+              "defaultValue": "message",
+              "description": "Choose what happens after a user submits the form: display thank you message, redirect to a specific page or simply hide form."
+            },
+            {
+              "id": "successMessage",
+              "name": "Thank you message",
+              "type": "textarea",
+              "textarea": {
+                "enableRichEdit": true,
+                "enableRichEditHtml": true
+              },
+              "defaultValue": "Your message was successfully sent! We will reply to you shortly.",
+              "allowEmpty": true,
+              "description": "This option allows you to set the text to display after the form was submitted."
+            },
+            {
+              "id": "successContinueText",
+              "name": "Thank you message button text",
+              "type": "text",
+              "defaultValue": "OK",
+              "allowEmpty": true,
+              "description": "This option allows you to set the text for the button that closes the thank you message."
+            },
+            {
+              "id": "redirectUrl",
+              "name": "Redirect URL",
+              "type": "text",
+              "defaultValue": "https://example.com",
+              "allowEmpty": true,
+              "description": "Set the URL to redirect the user to after form submission."
+            }
+          ]
+        },
+        "description": "Choose what happens after a user submits the form: display thank you message, redirect to a specific page or simply hide form."
+      },
+      {
+        "id": "messagesGroup",
+        "name": "Messages",
+        "tab": "settings",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "type": "static-html",
+              "staticHtml": {
+                "content": "<div style=\"font-size:15px;font-weight:bold;margin-bottom:-12px;\">Submit Button</div>"
+              }
+            },
+            {
+              "id": "submitText",
+              "name": "Submit button text",
+              "type": "text",
+              "defaultValue": "Submit",
+              "description": "Customize Submit button text. Tip: Don't make the text too long."
+            },
+            {
+              "id": "stepsMessagesDivider",
+              "type": "divider"
+            },
+            {
+              "id": "stepsMessagesTitle",
+              "type": "static-html",
+              "staticHtml": {
+                "content": "<div style=\"font-size:15px;font-weight:bold;margin-bottom:-12px;\">Multistep Form</div>"
+              }
+            },
+            {
+              "id": "stepsText",
+              "name": "step %1 of %2",
+              "type": "text",
+              "allowEmpty": true,
+              "defaultValue": "step %1 of %2",
+              "description": ""
+            },
+            {
+              "id": "stepBackText",
+              "name": "Back Button Text",
+              "type": "text",
+              "defaultValue": "Back",
+              "description": ""
+            },
+            {
+              "id": "stepNextText",
+              "name": "Next Button Text",
+              "type": "text",
+              "defaultValue": "Next",
+              "description": ""
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "static-html",
+              "staticHtml": {
+                "content": "<div style=\"font-size:15px;font-weight:bold;margin-bottom:-12px;\">Error Messages</div>"
+              }
+            },
+            {
+              "id": "errorMessageAllRequired",
+              "name": "Please, fill all the required fields",
+              "type": "text",
+              "defaultValue": "Please, fill all the required fields",
+              "description": ""
+            },
+            {
+              "id": "errorMessageAllIncorrect",
+              "name": "Please, fill all the fields correctly",
+              "type": "text",
+              "defaultValue": "Please, fill all the fields correctly",
+              "description": ""
+            },
+            {
+              "id": "errorMessageSetMailTo",
+              "name": "Please, set the email to send messages to",
+              "type": "text",
+              "defaultValue": "Please, set the email to send messages to",
+              "description": ""
+            },
+            {
+              "id": "errorMessageRequiredCaptcha",
+              "name": "Please, enter the captcha",
+              "type": "text",
+              "defaultValue": "Please, enter the captcha",
+              "description": ""
+            },
+            {
+              "id": "errorMessageFileSizeLimit",
+              "name": "File size limit exceeded",
+              "type": "text",
+              "defaultValue": "File size limit exceeded",
+              "description": ""
+            },
+            {
+              "id": "errorMessageFileNotAllowed",
+              "name": "File extension not allowed",
+              "type": "text",
+              "defaultValue": "File extension not allowed",
+              "description": ""
+            },
+            {
+              "id": "errorMessageUnknown",
+              "name": "Unknown error",
+              "type": "text",
+              "defaultValue": "Unknown error",
+              "description": ""
+            },
+            {
+              "id": "errorMessageRequired",
+              "name": "Required field",
+              "type": "text",
+              "defaultValue": "Required field",
+              "description": ""
+            },
+            {
+              "id": "errorMessageInvalid",
+              "name": "Invalid",
+              "type": "text",
+              "defaultValue": "Invalid",
+              "description": ""
+            },
+            {
+              "id": "errorMessageInvalidEmail",
+              "name": "Invalid email",
+              "type": "text",
+              "defaultValue": "Invalid email",
+              "description": ""
+            },
+            {
+              "id": "errorMessageInvalidPhone",
+              "name": "Invalid phone number",
+              "type": "text",
+              "defaultValue": "Invalid phone number",
+              "description": ""
+            },
+            {
+              "id": "errorMessageInvalidUrl",
+              "name": "Invalid URL",
+              "type": "text",
+              "defaultValue": "Invalid URL",
+              "description": ""
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "static-html",
+              "staticHtml": {
+                "content": "<div style=\"font-size:15px;font-weight:bold;margin-bottom:-12px;\">Date & Time</div>"
+              }
+            },
+            {
+              "id": "calendarWeekdaysShorthand",
+              "name": "Weekdays Shorthand",
+              "type": "textarea",
+              "defaultValue": "Sun\nMon\nTue\nWed\nThu\nFri\nSat",
+              "description": ""
+            },
+            {
+              "id": "calendarMonthsLonghand",
+              "name": "Months Longhand",
+              "type": "textarea",
+              "defaultValue": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember",
+              "description": ""
+            }
+          ]
+        }
+      },
+      {
+        "id": "multistepFormSubgroup",
+        "name": "Multistep Form",
+        "tab": "settings",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "showProgress",
+              "name": "Show multistep form progress bar",
+              "description": "Turn this option on to show remaining steps.",
+              "type": "toggle",
+              "defaultValue": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "recaptchaSubgroup",
+        "name": "reCaptcha",
+        "tab": "settings",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "recaptchaType",
+              "name": "Recaptcha Type",
+              "description": "Select reCaptcha type.",
+              "type": "select-inline",
+              "selectInline": {
+                "options": [
+                  {
+                    "value": "checkbox",
+                    "name": "Checkbox"
+                  },
+                  {
+                    "value": "invisible",
+                    "name": "Invisible"
+                  },
+                  {
+                    "value": "none",
+                    "name": "None"
+                  }
+                ]
+              },
+              "caption": "Attention: Even when reCaptcha is set to invisible, Google may require a visitor to go through verification process. Google makes this decision based on user behaviour.",
+              "defaultValue": "invisible"
+            }
+          ]
+        }
+      },
+      {
+        "id": "integrationsGroup",
+        "name": "Integrations",
+        "visible": false,
+        "tab": "settings",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "integrationsGoogleGroup",
+              "name": "Google Sheets",
+              "type": "subgroup",
+              "subgroup": {
+                "properties": [
+                  {
+                    "id": "integrationsGoogleToken",
+                    "name": "Google Auth",
+                    "type": "token",
+                    "token": {
+                      "provider": "google",
+                      "title": "Google",
+                      "scopes": "spreadsheets",
+                      "tokenId": "widget",
+                      "btnText": "Sign in with Google",
+                      "confirm": "This action will disconnect your form from Google Sheet, proceed?",
+                      "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE4cHgiIGhlaWdodD0iMThweCIgdmlld0JveD0iMCAwIDE4IDE4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KCiAgICA8ZyBpZD0ibG9nb19nb29nbGVnXzQ4ZHAiIHNrZXRjaDp0eXBlPSJNU0xheWVyR3JvdXAiPgogICAgICAgIDxwYXRoIGQ9Ik0xNy42NCw5LjIwNDU0NTQ1IEMxNy42NCw4LjU2NjM2MzY0IDE3LjU4MjcyNzMsNy45NTI3MjcyNyAxNy40NzYzNjM2LDcuMzYzNjM2MzYgTDksNy4zNjM2MzYzNiBMOSwxMC44NDUgTDEzLjg0MzYzNjQsMTAuODQ1IEMxMy42MzUsMTEuOTcgMTMuMDAwOTA5MSwxMi45MjMxODE4IDEyLjA0NzcyNzMsMTMuNTYxMzYzNiBMMTIuMDQ3NzI3MywxNS44MTk1NDU1IEwxNC45NTYzNjM2LDE1LjgxOTU0NTUgQzE2LjY1ODE4MTgsMTQuMjUyNzI3MyAxNy42NCwxMS45NDU0NTQ1IDE3LjY0LDkuMjA0NTQ1NDUgTDE3LjY0LDkuMjA0NTQ1NDUgWiIgaWQ9IlNoYXBlIiBmaWxsPSIjNDI4NUY0IiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIj48L3BhdGg+CiAgICAgICAgPHBhdGggZD0iTTksMTggQzExLjQzLDE4IDEzLjQ2NzI3MjcsMTcuMTk0MDkwOSAxNC45NTYzNjM2LDE1LjgxOTU0NTUgTDEyLjA0NzcyNzMsMTMuNTYxMzYzNiBDMTEuMjQxODE4MiwxNC4xMDEzNjM2IDEwLjIxMDkwOTEsMTQuNDIwNDU0NSA5LDE0LjQyMDQ1NDUgQzYuNjU1OTA5MDksMTQuNDIwNDU0NSA0LjY3MTgxODE4LDEyLjgzNzI3MjcgMy45NjQwOTA5MSwxMC43MSBMMC45NTcyNzI3MjcsMTAuNzEgTDAuOTU3MjcyNzI3LDEzLjA0MTgxODIgQzIuNDM4MTgxODIsMTUuOTgzMTgxOCA1LjQ4MTgxODE4LDE4IDksMTggTDksMTggWiIgaWQ9IlNoYXBlIiBmaWxsPSIjMzRBODUzIiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIj48L3BhdGg+CiAgICAgICAgPHBhdGggZD0iTTMuOTY0MDkwOTEsMTAuNzEgQzMuNzg0MDkwOTEsMTAuMTcgMy42ODE4MTgxOCw5LjU5MzE4MTgyIDMuNjgxODE4MTgsOSBDMy42ODE4MTgxOCw4LjQwNjgxODE4IDMuNzg0MDkwOTEsNy44MyAzLjk2NDA5MDkxLDcuMjkgTDMuOTY0MDkwOTEsNC45NTgxODE4MiBMMC45NTcyNzI3MjcsNC45NTgxODE4MiBDMC4zNDc3MjcyNzMsNi4xNzMxODE4MiAwLDcuNTQ3NzI3MjcgMCw5IEMwLDEwLjQ1MjI3MjcgMC4zNDc3MjcyNzMsMTEuODI2ODE4MiAwLjk1NzI3MjcyNywxMy4wNDE4MTgyIEwzLjk2NDA5MDkxLDEwLjcxIEwzLjk2NDA5MDkxLDEwLjcxIFoiIGlkPSJTaGFwZSIgZmlsbD0iI0ZCQkMwNSIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCI+PC9wYXRoPgogICAgICAgIDxwYXRoIGQ9Ik05LDMuNTc5NTQ1NDUgQzEwLjMyMTM2MzYsMy41Nzk1NDU0NSAxMS41MDc3MjczLDQuMDMzNjM2MzYgMTIuNDQwNDU0NSw0LjkyNTQ1NDU1IEwxNS4wMjE4MTgyLDIuMzQ0MDkwOTEgQzEzLjQ2MzE4MTgsMC44OTE4MTgxODIgMTEuNDI1OTA5MSwwIDksMCBDNS40ODE4MTgxOCwwIDIuNDM4MTgxODIsMi4wMTY4MTgxOCAwLjk1NzI3MjcyNyw0Ljk1ODE4MTgyIEwzLjk2NDA5MDkxLDcuMjkgQzQuNjcxODE4MTgsNS4xNjI3MjcyNyA2LjY1NTkwOTA5LDMuNTc5NTQ1NDUgOSwzLjU3OTU0NTQ1IEw5LDMuNTc5NTQ1NDUgWiIgaWQ9IlNoYXBlIiBmaWxsPSIjRUE0MzM1IiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIj48L3BhdGg+CiAgICA8L2c+Cjwvc3ZnPg=="
+                    },
+                    "defaultValue": "",
+                    "global": true,
+                    "caption": "To connect your form with Google Sheet you must authorize with Google",
+                    "description": ""
+                  },
+                  {
+                    "id": "integrationsGoogleSheetId",
+                    "name": "Google Sheet Integration",
+                    "type": "custom",
+                    "custom": {
+                      "type": "google-sheet-connect",
+                      "accessTokenProperty": "integrationsGoogleToken"
+                    },
+                    "defaultValue": "",
+                    "description": ""
+                  }
+                ]
+              },
+              "description": ""
+            },
+            {
+              "id": "integrationsMailchimpGroup",
+              "name": "MailChimp",
+              "type": "subgroup",
+              "visible": false,
+              "subgroup": {
+                "properties": []
+              },
+              "description": ""
+            }
+          ]
+        },
+        "description": ""
+      },
+      {
+        "id": "integrationsGroup",
+        "name": "Integrations",
+        "tab": "settings",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "type": "static-html",
+              "staticHtml": {
+                "content": "<div style=\"font-size:15px;font-weight:bold;margin-bottom:-12px;\">Google Sheets Integration</div>"
+              }
+            },
+            {
+              "id": "integrationsGoogleToken",
+              "name": "Google Auth",
+              "type": "token",
+              "token": {
+                "provider": "google",
+                "scopes": "spreadsheets",
+                "useWidgetId": true,
+                "confirm": "This action will disconnect your form from Google Sheet, proceed?",
+                "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+ICA8cGF0aCBmaWxsPSIjRUE0MzM1IiBkPSJNMjQgOS41YzMuNTQgMCA2LjcxIDEuMjIgOS4yMSAzLjZsNi44NS02Ljg1QzM1LjkgMi4zOCAzMC40NyAwIDI0IDAgMTQuNjIgMCA2LjUxIDUuMzggMi41NiAxMy4yMmw3Ljk4IDYuMTlDMTIuNDMgMTMuNzIgMTcuNzQgOS41IDI0IDkuNXoiLz4gIDxwYXRoIGZpbGw9IiM0Mjg1RjQiIGQ9Ik00Ni45OCAyNC41NWMwLTEuNTctLjE1LTMuMDktLjM4LTQuNTVIMjR2OS4wMmgxMi45NGMtLjU4IDIuOTYtMi4yNiA1LjQ4LTQuNzggNy4xOGw3LjczIDZjNC41MS00LjE4IDcuMDktMTAuMzYgNy4wOS0xNy42NXoiLz4gIDxwYXRoIGZpbGw9IiNGQkJDMDUiIGQ9Ik0xMC41MyAyOC41OWMtLjQ4LTEuNDUtLjc2LTIuOTktLjc2LTQuNTlzLjI3LTMuMTQuNzYtNC41OWwtNy45OC02LjE5Qy45MiAxNi40NiAwIDIwLjEyIDAgMjRjMCAzLjg4LjkyIDcuNTQgMi41NiAxMC43OGw3Ljk3LTYuMTl6Ii8+ICA8cGF0aCBmaWxsPSIjMzRBODUzIiBkPSJNMjQgNDhjNi40OCAwIDExLjkzLTIuMTMgMTUuODktNS44MWwtNy43My02Yy0yLjE1IDEuNDUtNC45MiAyLjMtOC4xNiAyLjMtNi4yNiAwLTExLjU3LTQuMjItMTMuNDctOS45MWwtNy45OCA2LjE5QzYuNTEgNDIuNjIgMTQuNjIgNDggMjQgNDh6Ii8+ICA8cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDQ4djQ4SDB6Ii8+PC9zdmc+"
+              },
+              "defaultValue": "",
+              "caption": "To connect your form with Google Sheet you must authorize with Google",
+              "description": "",
+              "global": true,
+              "private": true
+            },
+            {
+              "id": "integrationsGoogleSheetId",
+              "name": "Google Sheet Integration",
+              "type": "custom",
+              "custom": {
+                "type": "google-sheet-connect",
+                "accessTokenProperty": "integrationsGoogleToken"
+              },
+              "defaultValue": "",
+              "description": ""
+            }
+          ]
+        },
+        "description": "",
+        "onlyForCloud": true
+      },
+      {
+        "id": "layout",
+        "name": "Layout",
+        "tab": "appearance",
+        "type": "select-inline",
+        "selectInline": {
+          "options": [
+            {
+              "value": "default",
+              "name": "Default"
+            },
+            {
+              "value": "boxed",
+              "name": "Boxed"
+            },
+            {
+              "value": "floating",
+              "name": "Floating"
+            }
+          ]
+        },
+        "defaultValue": "default",
+        "description": "Select one of the predefined layouts. Default - use this layout to embed your form as is. Boxed - use the boxed layout to make sure your form stands out against the rest of the page content. Floating - this layout adds a floating button that opens the form when you click on it. This button scrolls along with your page and is always available for the user."
+      },
+      {
+        "id": "floatingBubbleGroup",
+        "name": "Floating Button",
+        "tab": "appearance",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "floatingIcon",
+              "name": "Floating Button Icon",
+              "type": "select-visual",
+              "select": {
+                "options": [
+                  {
+                    "value": "message",
+                    "name": "Message",
+                    "img": "https://elfsight.com/assets/forms/icons/message.svg"
+                  },
+                  {
+                    "value": "form",
+                    "name": "Form",
+                    "img": "https://elfsight.com/assets/forms/icons/form.svg"
+                  },
+                  {
+                    "value": "dialog",
+                    "name": "Dialog",
+                    "img": "https://elfsight.com/assets/forms/icons/dialog.svg"
+                  },
+                  {
+                    "value": "feedback",
+                    "name": "Feedback",
+                    "img": "https://elfsight.com/assets/forms/icons/feedback.svg"
+                  },
+                  {
+                    "value": "date",
+                    "name": "Calendar",
+                    "img": "https://elfsight.com/assets/forms/icons/date.svg"
+                  },
+                  {
+                    "value": "heart",
+                    "name": "Heart",
+                    "img": "https://elfsight.com/assets/forms/icons/heart.svg"
+                  },
+                  {
+                    "value": "support",
+                    "name": "Support",
+                    "img": "https://elfsight.com/assets/forms/icons/support.svg"
+                  },
+                  {
+                    "value": "phone",
+                    "name": "Phone",
+                    "img": "https://elfsight.com/assets/forms/icons/phone.svg"
+                  },
+                  {
+                    "value": "compose",
+                    "name": "Compose",
+                    "img": "https://elfsight.com/assets/forms/icons/compose.svg"
+                  },
+                  {
+                    "value": "doc",
+                    "name": "Doc",
+                    "img": "https://elfsight.com/assets/forms/icons/doc.svg"
+                  }
+                ],
+                "layout": "two-cols"
+              },
+              "defaultValue": "message",
+              "allowEmpty": true,
+              "description": "Select the icon from the list to display on floating button."
+            },
+            {
+              "id": "floatingText",
+              "name": "Floating Button Text",
+              "type": "text",
+              "defaultValue": "",
+              "allowEmpty": true,
+              "description": ""
+            },
+            {
+              "id": "floatingPosition",
+              "name": "Position",
+              "type": "select-inline",
+              "selectInline": {
+                "options": [
+                  {
+                    "value": "left",
+                    "name": "Left"
+                  },
+                  {
+                    "value": "center",
+                    "name": "Center"
+                  },
+                  {
+                    "value": "right",
+                    "name": "Right"
+                  }
+                ]
+              },
+              "defaultValue": "right"
+            }
+          ]
+        }
+      },
+      {
+        "id": "width",
+        "name": "Width (px, %, auto)",
+        "tab": "appearance",
+        "type": "text",
+        "defaultValue": "580",
+        "allowEmpty": true,
+        "description": "Set form width in pixels or percents. Set \"auto\" to make the form full width."
+      },
+      {
+        "type": "divider",
+        "tab": "appearance"
+      },
+      {
+        "id": "style",
+        "name": "Style",
+        "tab": "appearance",
+        "type": "select",
+        "select": {
+          "options": [
+            {
+              "value": "classic",
+              "name": "Classic"
+            },
+            {
+              "value": "flat",
+              "name": "Flat"
+            },
+            {
+              "value": "material",
+              "name": "Material"
+            },
+            {
+              "value": "classic-rounded",
+              "name": "Classic Rounded"
+            },
+            {
+              "value": "flat-rounded",
+              "name": "Flat Rounded"
+            }
+          ]
+        },
+        "defaultValue": "classic",
+        "description": "This option allows to choose one of the 5 predefined form styles. Choose the one that suits you best."
+      },
+      {
+        "id": "mainColor",
+        "name": "Main Color",
+        "tab": "appearance",
+        "type": "color",
+        "defaultValue": "rgba(28, 145, 255, 1)",
+        "description": "Choose the color to be used in your form: Submit button, progress bar, active element etc."
+      }
+    ]
+  },
+  "preferences": {
+    "previewUpdateTimeout": 0,
+    "previewDefaultBgColor": "white",
+    "enableCustomCSS": true
+  }
+}
